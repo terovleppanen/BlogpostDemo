@@ -6,6 +6,7 @@ body {
   letter-spacing: 0.5px;
 }
 
+/* Page wide heading styles  */
 h1,
 h2,
 h3,
@@ -20,6 +21,7 @@ h1 {
   font-size: 80px;
   font-weight: 400;
   letter-spacing: -1.5px;
+  margin: 0;
 }
 
 h2 {
@@ -47,12 +49,29 @@ h6 {
   letter-spacing: 0.25px;
 }
 
-.content h3 {
-  text-transform: capitalize;
+/* Hero screen  */
+.hero {
+  background-color: #863ae8;
+  height: 100vh;
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-code {
-  color: #e95400;
+.hero h1,
+.hero p {
+  width: 75%;
+  max-width: 900px;
+  margin: 16px 0;
+}
+
+.hero hr {
+  width: 50%;
+  margin: 32px 0;
 }
 
 /* Main content div  */
@@ -60,6 +79,10 @@ code {
   max-width: 900px;
   margin: 0 auto;
   padding: 32px;
+}
+
+.content h3 {
+  text-transform: capitalize;
 }
 
 /* Info div  */
@@ -75,7 +98,7 @@ code {
   color: #e95400;
 }
 
-/* Main content  */
+/* Main text content  */
 .lead-paragraph {
   text-transform: uppercase;
   font-weight: 500;
@@ -96,6 +119,10 @@ code {
   display: block;
   font-weight: 700;
   margin-left: 20px;
+}
+
+code {
+  color: #e95400;
 }
 
 /* footer styles  */
